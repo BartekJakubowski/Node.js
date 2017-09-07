@@ -1,0 +1,38 @@
+body {
+	background-color: #232323;
+}
+
+.square {
+
+	width: 48%;
+	padding-bottom: 48%;
+	float: left;
+	margin: 1%;
+
+}
+
+@media only screen and (min-width: 960px) {
+    
+.square {width: 21%;
+    padding-bottom: 22%;}
+
+}
+
+
+#container {
+	margin: 0 auto;
+	max-width: 95%;
+}
+
+#red {background: red;}
+#blue {background: blue;}
+#orange{background: orange;}
+#green{background: green;}
+
+h1 {
+	color: white;
+}
+
+span {
+	color: white;
+}
