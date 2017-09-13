@@ -4,18 +4,17 @@ process.stdin.on('readable', function() {
     if (input !== null) {
         var instruction = input.toString().trim();
 
-        switch (instruction === '/exit') {
+        switch (instruction) {
         	case '/exit':
-            process.stdout.write('Quitting app!\n');
-            process.exit();
-            break;
-  			
+            	process.stdout.write('Quitting app!\n');
+           		process.exit();
+            	break;
+            case '/hi':
+            	process.stdout.write('Hi!\n');
+            	break;
             default: 
             process.stderr.write('Wrong instruction!\n');
-
-           
-
-        }
+        };
     }
 });
 
