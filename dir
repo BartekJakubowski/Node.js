@@ -1,0 +1,11 @@
+var fs = require('fs');
+var colors = require('colors');
+
+fs.readdir('../', function(err, files) { //zczytuje katalog wyżej
+    console.log('zczytuje zawartość katalogu'.red);
+    console.log(files);
+    fs.writeFile('./zawartosc_katalogu.txt', files, function (err, files) { 
+        if (err) throw err; //jeśl pojawi się błąd, wyrzuć wyjątek
+        console.log('Zapisano!'.yellow);
+    })
+})
