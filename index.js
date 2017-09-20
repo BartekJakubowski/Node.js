@@ -13,7 +13,7 @@ server.on('request', function(request, response) {
         response.end();
     } else { //w innym przypadku wyświetl dowolny obrazek z info o 404
             response.statusCode = 404;
-            response.write('<body><img src="https://media.giphy.com/media/NTXqH1bUCfHBS/source.gif" /> </body>');
+            response.write('<body><img src="https://img00.deviantart.net/248d/i/2013/216/6/8/coffee_404_by_thanshuhai-d6gnw79.png" /> </body>');
             console.log("Błędny katalog");
             response.end();
         }
