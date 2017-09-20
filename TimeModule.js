@@ -11,4 +11,4 @@ function TimeModule() {
     return uptimeTime;
 };
 
-exports.print = getTimeModule;
+exports.print = TimeModule;
