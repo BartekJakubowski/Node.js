@@ -1,7 +1,7 @@
-var os = require('os');
-var uptime = os.uptime();
+//var os = require('os');
+//var uptime = os.uptime();
 
-function TimeModule() {
+function TimeModule(uptime) {
     var sekundy = uptime.toFixed(0);
     var godziny = Math.floor(uptime / 3600);
     var minuty = Math.floor((uptime - godziny * 3600)/60); 
