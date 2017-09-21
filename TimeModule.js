@@ -1,6 +1,3 @@
-//var os = require('os');
-//var uptime = os.uptime();
-
 function TimeModule(uptime) {
     var sekundy = uptime.toFixed(0);
     var godziny = Math.floor(uptime / 3600);
